@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        MyAISite
+    </title>
+
+    <style>
+        @font-face {
+            font-family: "AfacadFlux";
+            src: url("../static/AfacadFlux-Regular.ttf") format('truetype');
+        }
+
+        body {
+            font-family: "AfacadFlux";
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .header {
+            font-family: "AfacadFlux";
+            position: sticky;
+            top: 0;
+            text-align: center;
+            background-color: blueviolet;
+            padding: 20px;
+        }
+
+        .footer {
+            font-family: "AfacadFlux";
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: blueviolet;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            font-family: "AfacadFlux";
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body background="{{ body_color }}">
+    <header class="header" background="{{ header_footer_color }}">
+        <h1>MyAISite</h1>
+    </header>
+
+    <div class="content">
+        <h2 style="padding-bottom: 1px; margin-bottom: none; text-align: center;">Create your own webpage</h2>
+        <h4 style="padding-top: none; margin-top: none; text-align: center;">with the power of AI</h4>
+        <br>
+        <p style="text-align: center;">Please fill out this simple form to create a webpage using AI.</p>
+        <form action="/gen" method="post"></form>
+    </div>
+
+    <footer class="footer" background="{{ header_footer_color }}">
+        <p>© 2023 Subhrajit Sain. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
