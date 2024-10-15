@@ -32,6 +32,3 @@ def index():
     response1 = chat_session.send_message("Please specify a nice blue color. [AS HEXADECIMAL COLOR CODE FOR CSS]")
     response2 = chat_session.send_message("Please specify a dark blue color. [AS HEXADECIMAL COLOR CODE FOR CSS]")
     return render_template('index.html', header_footer_color=response1, body_color=response2)
-
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8080)
